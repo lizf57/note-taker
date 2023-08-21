@@ -17,7 +17,7 @@ router.get('/api/notes', async (req, res) => {
 })
 
 // create
-router.post('/api/notes', (req, res) => {
+router.post('/api/notes', async (req, res) => {
     // receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client.
     try{
         const notes = JSON.parse(await fs.readFile(db, "utf-8"));
