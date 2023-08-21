@@ -1,7 +1,8 @@
 // require() function to load express module to get access to express exports 
 const express = require('express')
 const app = express()
-const PORT = 3001
+const PORT = process.env.PORT || 3001
+
 
 // require() function to load modules in route folders to be exported
 const apiRoutes = require('./routes/api')
