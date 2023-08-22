@@ -1,31 +1,20 @@
 # Challenge 11: Note Taker 
 
 ## Description
+The Note Taker is an application that allows users to write, edit, save, and delete notes for their convienance. 
 
- ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Badges](#badges)
-  * [Contributions](#contributions)
-  * [Tests](#tests)
-  * [Questions](#questions)
+This application uses an Express.js back end development to save and retrieve note data from a JSON file.
 
-## [Installation](#Table-of-Contents)
+The University of Wisconsin provided this [Starter-code](https://github.com/coding-boot-camp/miniature-eureka) for the front end development.
 
-## [Usage](#table-of-contents)
+![screenshot](./public/assets/images/homepage.png)
 
-## [License](#table-of-contents)
-
-## [Badges](#table-of-contents)
+The application can be deployed here: [Heroku](https://express-note-taker-challenge11-eb0f5d5a8458.herokuapp.com/)
 
 
-## [Contributions](#table-of-contents)
-There were no other developers contributing to this application. The project was initiated as a challenge assignment from the University of Wisconsin Coding Bootcamp. The University provided a starter code for the front end developement of the project.
 
-## [Tests](#table-of-contents)
 
-## [Questions](#Table-of-Contents)
+## Questions
 If you have any questions contact me here:
 
   [GitHub](https://github.com/lizf57)

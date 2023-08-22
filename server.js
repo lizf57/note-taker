@@ -18,4 +18,4 @@ app.use(express.static('public'))
 app.use(routes)
 
 // server listens to PORT
-app.listen(PORT, () => { console.log(`API server listening on port ${PORT}`) }) 
+app.listen(PORT, () => { console.log(`API server listening on port ${PORT}`) }) ;
