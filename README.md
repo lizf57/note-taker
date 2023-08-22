@@ -8,6 +8,7 @@ This application uses an Express.js back end development to save and retrieve no
 The University of Wisconsin provided this [Starter-code](https://github.com/coding-boot-camp/miniature-eureka) for the front end development.
 
 ![screenshot](./public/assets/images/homepage.png)
+![screenshot1](./public/assets/images/notepage.png)
 
 The application can be deployed here: [Heroku](https://express-note-taker-challenge11-eb0f5d5a8458.herokuapp.com/)
 
