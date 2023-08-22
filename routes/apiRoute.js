@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const path = require('path')
-const nanoID = require('nanoid')
+const deleteNote = require('../lib/notes')
 const fs = require('fs/promises')
 let db = require('../../db/db');
 
@@ -20,14 +20,13 @@ router.get('/api/notes', async (req, res) => {
 router.post('/api/notes', async (req, res) => {
     // receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client.
     try{
-        const notes = JSON.parse(await fs.readFile(db, "utf-8"));
-        notes.push({
+        const createNew = JSON.parse(await fs.readFile(db, "utf-8"));
+        createNew.push({
             title: req.body.title,
             text: req.body.text,
-            id: nanoID(),
         });
-        await fs.writeFile(db, JSON.stringify(notes));
-        res.json(notes);
+        await fs.writeFile(db, JSON.stringify(createNew));
+        res.json(createNew);
     } catch (err) {
         console.log(err)
         res.status(500).json(err);
